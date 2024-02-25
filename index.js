@@ -8,9 +8,10 @@ app.set('view engine','ejs')
 app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
-    res.render('index')
+    res.render('index.ejs')
 })
 
-app.listen(6000,()=>{
-    console.log('App listening on port 6000')
+
+app.listen(2000,()=>{
+    console.log('App listening on port 2000')
 })
